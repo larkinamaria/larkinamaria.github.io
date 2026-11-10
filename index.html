@@ -404,14 +404,13 @@
   .integr{max-width:780px;margin:38px auto 0;padding-top:32px;border-top:1px solid var(--line);text-align:center}
   .integr b{display:block;font-family:'Cormorant',Georgia,serif;font-size:clamp(38px,5.5vw,54px);font-style:italic;font-weight:500;color:var(--forest);line-height:1.1}
   .integr p{margin:12px auto 0;max-width:44ch;color:var(--soft)}
-  @media(max-width:560px){
-    .whole-grid{gap:12px}
-    .wc{padding:22px 16px 24px;border-radius:18px}
-    .wc .ic{width:38px;height:38px;margin-bottom:14px}
-    .wc h3{font-size:24px}
-    .wc p{font-size:14px}
-    .whole-core{width:56px;height:56px;box-shadow:0 0 0 5px var(--mist)}
-    .whole-core svg{width:34px;height:34px}
+  @media(max-width:620px){
+    .whole-grid{grid-template-columns:1fr;gap:12px}
+    .whole-core{display:none}
+    .wc{padding:22px 20px 24px;border-radius:18px;display:grid;grid-template-columns:40px 1fr;column-gap:14px;align-items:center}
+    .wc .ic{width:40px;height:40px;margin:0;grid-column:1;grid-row:1}
+    .wc h3{font-size:26px;margin:0;grid-column:2;grid-row:1}
+    .wc p{font-size:15px;grid-column:1/-1;grid-row:2;margin-top:12px}
   }
   .split2{
     display:grid;grid-template-columns:.9fr 1.1fr;
@@ -578,22 +577,22 @@
         <div class="wc">
           <svg class="ic" viewBox="0 0 48 48" fill="none" stroke="#5E7A6D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M23 11c-3-3-9-1-10 4-3 1-4 5-2 8-2 3 0 8 4 8 1 3 5 4 8 2"/><path d="M25 11c3-3 9-1 10 4 3 1 4 5 2 8 2 3 0 8-4 8-1 3-5 4-8 2"/><path d="M24 11v26" stroke="#93A597"/></svg>
           <h3>Ум</h3>
-          <p>Ясность мышления, осознанность, понимание.</p>
+          <p>То, как мы воспринимаем и осмысляем мир, формируем убеждения, принимаем решения и создаём привычные модели мышления.</p>
         </div>
         <div class="wc">
           <svg class="ic" viewBox="0 0 48 48" fill="none" stroke="#5E7A6D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 39C11 30 8 20 13 14c4-4 9-2 11 2 2-4 7-6 11-2 5 6 2 16-11 25z"/></svg>
           <h3>Сердце</h3>
-          <p>Принятие, тепло, эмпатия, забота.</p>
+          <p>Наша способность чувствовать, понимать и принимать себя, быть открытыми к любви, близости, сопереживанию и искренней связи с другими.</p>
         </div>
         <div class="wc">
           <svg class="ic" viewBox="0 0 48 48" fill="none" stroke="#5E7A6D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="10" r="4"/><path d="M12 21l12-4 12 4"/><path d="M24 17v13"/><path d="M24 30l-8 12"/><path d="M24 30l8 12"/></svg>
           <h3>Тело</h3>
-          <p>Ощущения, потребности, контакт с собой.</p>
+          <p>Наша связь с собой через ощущения и физическое состояние. Способность слышать потребности тела, поддерживать баланс и восстанавливать ресурсы.</p>
         </div>
         <div class="wc">
           <svg class="ic" viewBox="0 0 48 48" fill="none" stroke="#5E7A6D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 7c1 10 7 16 17 17-10 1-16 7-17 17-1-10-7-16-17-17 10-1 16-7 17-17z"/><circle cx="24" cy="24" r="3" stroke="#93A597"/></svg>
           <h3>Дух</h3>
-          <p>Смыслы, ценности, внутренние ориентиры.</p>
+          <p>Связь со своими глубинными ценностями и смыслами. То, что придаёт жизни направление, помогает ощущать внутреннюю целостность и видеть нечто большее, чем повседневность.</p>
         </div>
         <div class="whole-core" aria-hidden="true">
           <svg viewBox="0 0 48 48" fill="none" stroke="#5E7A6D" stroke-width="1.2"><circle cx="19" cy="19" r="10" stroke="#93A597"/><circle cx="29" cy="19" r="10"/><circle cx="19" cy="29" r="10"/><circle cx="29" cy="29" r="10" stroke="#93A597"/><circle cx="24" cy="24" r="2" fill="#5E7A6D"/></svg>
